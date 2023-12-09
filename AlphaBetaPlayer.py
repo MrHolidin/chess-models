@@ -8,7 +8,7 @@ import typing as tp
 class AlphaBetaPlayer(Player):
     def __init__(self, estimator: PositionEstimator, depth: int = 4):
         if depth <= 0:
-            raise ValueError("Deep for BriethSearchPlayer can't be lower than 0")
+            raise ValueError("Deep for AlphaBetaPlayer can't be lower than 0")
         self.depth = depth
         self.estimator = estimator
         self.estimation_cache = {}
